@@ -442,14 +442,7 @@ https://v.youku.com/v_show/id_XNTgwODQwOTk4OA==.html
 
 ## 结束语
 
-以上内容均是参考了知乎大佬【宁子安】和AirSim的官方wiki内容，请大家多提意见，如有不对定当及时修改。以下是我安装过程中遇到的一些问题，希望大家有遇到问题解决了也提出来，此文档作为定时更新文档放在那那那上。最后，阿木实验室面向所有AirSim开发者及爱好者发起招募，欢迎大家加入我们AirSim开发小组，一起为AirSim在无人机开源生态发展做出贡献。（可扫下方二维码进群进行技术交流）
-
- 
-
-进群二维码：
-
-<img src="https://gitee.com/jingwen-celia/picgo-second/raw/master/img/d682a1c78b3843bc40dc6503e0386e3.jpg" style="zoom:25%;" />
-<center>（如若过期，请联系小助手：yinyue199506 ，添加时备注：Airsim进群）</center>
+以上内容均是参考了知乎大佬【宁子安】和AirSim的官方wiki内容，请大家多提意见，如有不对定当及时修改。以下是我安装过程中遇到的一些问题，希望大家有遇到问题解决了也提出来，此文档作为定时更新文档放在那那那上。最后，阿木实验室面向所有AirSim开发者及爱好者发起招募，欢迎大家加入我们AirSim开发小组，一起为AirSim在无人机开源生态发展做出贡献。（进Airsim继续交流群请添加小助手：yinyue199506 ，添加时备注：Airsim进群）
 
  
 
