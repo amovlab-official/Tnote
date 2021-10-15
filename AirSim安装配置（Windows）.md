@@ -14,11 +14,6 @@
 
 <img src="https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211014183109.png"  />
 
-**目 录:**
-
-[toc]
-
-
 
  
 
@@ -124,25 +119,19 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 		5. 点击【调试—开始调试】
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015112346.png)
-
-
-
 <center>图9 官方wiki对于启动Block环境的相关说明 </center>
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015112423.png)
-
 <center>图10 VS 2019启动环境三步骤</center>
 
 点击后会打开Unreal Engine，打开blocks环境，点击【运行】
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015112538.png)
-
 <center>图11 运行Blocks环境</center>
 
 此时会跳出对话框，如果选择 YES 会出现小车模型，点击 NO 会出现四旋翼无人机模型。这里我们点击NO。出现了以下画面表示我们配置成功至此，我们完成了基础配置。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015112637.png)
-
 <center>图12 四旋翼无人机模型</center>
 
 ### 4.2 搭建环境landscape
@@ -154,7 +143,6 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 （1）打开【Epic Game Launcher】，点击【Learn】，通过往下滑动，找到【Landscape Mountains】，点进去并点击【Create】，进行下载。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015112915.png)
-
 <center>图13 现在Landscape Mountains地图</center>
 
 （2）找到下载好的地图文件夹位置，双击【LandscpeMountains.uproject】，会打开Unreal编辑器，点击左上角的【文件--新建C++类】，一直点下一步直到创建类，创建好后会自动跳转到Visual Studio2019。最后关闭Unreal和 Visual Studio2019。
@@ -162,13 +150,11 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 ![image-20211015113238793](C:\Users\Administrator.DESKTOP-KDTJ7L1\AppData\Roaming\Typora\typora-user-images\image-20211015113238793.png)
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015113300.png)
-
 <center>图14创建C++文件</center>
 
 （3）在原AirSim安装路径中，找到【Unreal--Plugins】的Plugins文件，将这个文件夹整个复制到刚刚下载好的地图目录中，如下图：
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015113408.png)
-
 <center>图15 复制AirSim插件“Plugins”到新的工程</center>
 
 <font color="orange">小Tips：“Plugins” 文件夹非常重要，可以把它复制到任何一个虚幻引擎的工程中，这样就可以使用 AirSim 插件。</font>
@@ -209,7 +195,6 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 （5）保存关闭后，右击LandscapeMountains.uproject。选择【Generate Visual Studio project files】。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015120447.png)
-
 <center>图16 生成Visual Studio项目</center>
 
 （6）双击打开LandscapeMountains.sln文件，会自动运行Visual Studio2019。打开后重复上次调试三步骤：编译选项改为【DebugGame_Editor】和【Win64】，最后要把blocks设为【启动项】，最后点击调试，启动Unreal
@@ -219,13 +204,11 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 a. 在最上层菜单栏找到【窗口--世界场景设置】，点击使其打钩
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015120605.png)
-
 <center>图17 打开场景设置</center>
 
 b. 在界面右下角的世界场景设置中选择游戏模式为【AirSimGameMode】
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015120644.png)
-
 <center>图18  选择游戏模式为“AirSimGameMode”</center>
 
 c. 在世界场景上方（界面右上角），世界大纲视图中搜索--player，共能搜出来11个初始玩家位置，删除10个只留下一个（偏于后续操作不出问题）。
@@ -233,11 +216,9 @@ c. 在世界场景上方（界面右上角），世界大纲视图中搜索--pla
 ​    在下方【细节】通过调整XYZ轴来调整初始玩家的位置。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015120944.png)
-
 <center>图19 查看初始玩家</center>
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015120959.png)
-
 <center>图20更改初始玩家及位置</center>
 
 d.两点非必须但建议的设置：
@@ -245,13 +226,11 @@ d.两点非必须但建议的设置：
 ○ 打开菜单栏盘【编辑--编辑器偏好设置】，搜索【CPU】，把“**处于背景中时占用较小CPU**”选项打开。这样当Unreal 编辑器不在窗口的最前面时，就不会    实时渲染了，但是不影响仿真的运行。所以还是建议勾选。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121121.png)
-
 <center>图21 勾选“处于北京市占用较少CPU” </center>
 
 ○点击主屏幕左上角小三角，打开【FPS】，此时右边就会出现当前的FPS和时延。当FPS下降到20以内时，说明数据处理比较缓慢，需要找到问题所在，并优化程序。FPS在20以上算是比较流畅的。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121149.png)
-
 <center>图22 打开FPS设置</center>
 
 
@@ -265,7 +244,6 @@ d.两点非必须但建议的设置：
 接下来我们更换至电脑视角，通过路径【C:\Users\你的用户名\Documents\AirSim】找到【setting.json】文件。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121219.png)
-
 <center>图23 打开AirSim中的settings.json文件</center>
 
  将settings.json 里面代码改成电脑视角的代码，注意该代码里的ComputerVision是指电脑视角，改成Car就是小车模型，改成Multirotor就是对应着四旋翼无人机。
@@ -320,11 +298,9 @@ d.两点非必须但建议的设置：
 菜单搜索Anaconda Navigator，打开软件，点击【environment-Create】配置一个新的环境，自行命名，这里我命名为“Airsim”，Python选择的3.8版本，点击创建。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121332.png)
-
 <center>图24 创建一个新环境</center>
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121504.png)
-
 <center>图25 新环境初始设置</center>
 
 <font color="red">注意：这里的Location地址位置非常重要，需要记得新配置的环境在那个路径下。</font>
@@ -336,7 +312,6 @@ d.两点非必须但建议的设置：
 创建好后直接通过pip命令安装msgpack-rpc-python和airsim两个库。首先点击新建好环境（Airsim）右边的小三角，再点击【Open Terminal】打开终端；
 
 ![image-20211015121522762](C:\Users\Administrator.DESKTOP-KDTJ7L1\AppData\Roaming\Typora\typora-user-images\image-20211015121522762.png)
-
 <center>图26 打开终端</center>
 
 在终端中输入以下命令，进行安装两个库。
@@ -361,13 +336,11 @@ d.两点非必须但建议的设置：
 打开安装好的Pycharm，点击【New Project】
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121649.png)
-
 <center>图27 打开PyCharm</center>
 
 勾选Previously configured interper，并点击右边![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121729.png)扩展。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121901.png)
-
 <center>图28 进行环境配置</center>
 
 点击System Interpreter，点击扩展，选择上个步骤配置出的环境（Airsim）路径里面的Python.exe。比如这里是【D:\ppam.u\Anaconda3\envs\AirSim\python.exe】。
@@ -375,21 +348,18 @@ d.两点非必须但建议的设置：
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121944.png)
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015121959.png)
-
-<center>图39 Anaconda与PyCharm的环境配置</center>
+<center>图29 Anaconda与PyCharm的环境配置</center>
 
  
 
 然后就可以创建你的项目了，注意这里的location是指你的Python代码位置，可自定义。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015122039.png)
-
 <center>图30 创建新工程时需要修改的路径</center>
 
 通过【右键点击新建项目-New-Python File】，就可以构建自己的Python代码。
 
 ![image-20211015122110417](C:\Users\Administrator.DESKTOP-KDTJ7L1\AppData\Roaming\Typora\typora-user-images\image-20211015122110417.png)
-
 <center>图31 在新项目中添加Python文件</center>
 
 ## 6.Demo演示
@@ -406,24 +376,24 @@ d.两点非必须但建议的设置：
  """
  import airsim
  import time
- ​
+ 
  client = airsim.MultirotorClient()  # connect to the AirSim simulator
  client.enableApiControl(True)       # 获取控制权
  client.armDisarm(True)              # 解锁
  client.takeoffAsync().join()        # 第一阶段：起飞
- ​
+ 
  client.moveToZAsync(-2, 1).join()   # 第二阶段：上升到2米高度
- ​
+ 
  # 飞正方形
  client.moveByVelocityZAsync(1, 0, -2, 8).join()     # 第三阶段：以1m/s速度向前飞8秒钟
  client.moveByVelocityZAsync(0, 1, -2, 8).join()     # 第三阶段：以1m/s速度向右飞8秒钟
  client.moveByVelocityZAsync(-1, 0, -2, 8).join()    # 第三阶段：以1m/s速度向后飞8秒钟
  client.moveByVelocityZAsync(0, -1, -2, 8).join()    # 第三阶段：以1m/s速度向左飞8秒钟
- ​
+ 
  # 悬停 2 秒钟
  client.hoverAsync().join()          # 第四阶段：悬停6秒钟
  time.sleep(6)
- ​
+ 
  client.landAsync().join()           # 第五阶段：降落
  client.armDisarm(False)             # 上锁
  client.enableApiControl(False)      # 释放控制权 """
@@ -431,24 +401,24 @@ d.两点非必须但建议的设置：
  """
  import airsim
  import time
- ​
+ 
  client = airsim.MultirotorClient()  # connect to the AirSim simulator
  client.enableApiControl(True)       # 获取控制权
  client.armDisarm(True)              # 解锁
  client.takeoffAsync().join()        # 第一阶段：起飞
- ​
+ 
  client.moveToZAsync(-2, 1).join()   # 第二阶段：上升到2米高度
- ​
+ 
  # 飞正方形
  client.moveByVelocityZAsync(1, 0, -2, 8).join()     # 第三阶段：以1m/s速度向前飞8秒钟
  client.moveByVelocityZAsync(0, 1, -2, 8).join()     # 第三阶段：以1m/s速度向右飞8秒钟
  client.moveByVelocityZAsync(-1, 0, -2, 8).join()    # 第三阶段：以1m/s速度向后飞8秒钟
  client.moveByVelocityZAsync(0, -1, -2, 8).join()    # 第三阶段：以1m/s速度向左飞8秒钟
- ​
+ 
  # 悬停 2 秒钟
  client.hoverAsync().join()          # 第四阶段：悬停6秒钟
  time.sleep(6)
- ​
+ 
  client.landAsync().join()           # 第五阶段：降落
  client.armDisarm(False)             # 上锁
  client.enableApiControl(False)      # 释放控制权
@@ -487,7 +457,6 @@ https://v.youku.com/v_show/id_XNTgwODQwOTk4OA==.html
 进群二维码：
 
 <img src="https://gitee.com/jingwen-celia/picgo-second/raw/master/img/d682a1c78b3843bc40dc6503e0386e3.jpg" style="zoom:25%;" />
-
 <center>（如若过期，请联系小助手：yinyue199506 ，添加时备注：Airsim进群）</center>
 
  
