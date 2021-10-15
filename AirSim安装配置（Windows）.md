@@ -22,19 +22,16 @@
 AirSim软件对电脑要求较高。以下是我找到的三个例子可以给大家进行参考。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211014183549.png)
-
 <center>图1 官方推荐电脑配置说明</center>
 
 
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211014183202.png)
-
 <center>图2 知乎宁子安推荐电脑配置</center>
 
 
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211014183617.png)
-
 <center>图3 我自己电脑配置</center>
 
 ## 2.软件汇总
@@ -61,7 +58,6 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 （1）下载时直接选择community版本：
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015092906.png)
-
 <center>图4 VS 2019官网界面</center>
 
 ​	（2）下载好安装时请选择：
@@ -79,13 +75,11 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 进入后点击右上角的【下载】，建议选择下载 “创作许可”，如下图所示。点击 “立即下载” 后，会提示登录 Epic Game 账户，如果没有，则需要注册。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015110630.png)
-
 <center>图5 选择“创作许可”版本下载</center>
 
 下载安装好后，选择【Libiary】，安装驱动【4.26.2】
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015110831.png)
-
 <center>图6 驱动版本列表</center>
 
  
@@ -95,13 +89,11 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 （1）在开始菜单栏-搜索中搜索【Developer Command Prompt for VS 2019】，运行。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015111032.png)
-
 <center>图7 运行“developer Command Prompt for VS 2019”</center>
 
 （2）打开后进入到你想保存AirSim所在的文件夹位置，这里我选择的是D盘（不建议下载到C盘），使用Git工具进行下载，（如果没有工具请先到[官网](https://git-scm.com/downloads)下载Git工具）。输入指令【git clone https://github.com/Microsoft/AirSim.git】。
 
 ![](https://gitee.com/jingwen-celia/picgo-second/raw/master/img/20211015111917.png)
-
 <center>图8 下载AirSim</center>
 
 ## 4.运行环境测试（block测试）
