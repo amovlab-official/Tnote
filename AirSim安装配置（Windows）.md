@@ -56,7 +56,7 @@ AirSim软件对电脑要求较高。以下是我找到的三个例子可以给�
 
 ## 3.安装（一）
 
-### 3.1安装Visual Studio 2019集成开发环境\****
+### 3.1安装Visual Studio 2019集成开发环境
 
 **下载网址：**https://visualstudio.microsoft.com/zh-hans/vs/
 
