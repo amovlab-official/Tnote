@@ -40,7 +40,7 @@
 
 ## 常见问题汇总
 
-1.右键没有"Git Bash Here"，或者Git Bash Here 没有图标显示。
+### 1.右键没有"Git Bash Here"，或者Git Bash Here 没有图标显示。
 
 **解决方法：**
 
